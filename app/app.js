@@ -4,6 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'ui.bootstrap',
+  'ui.router',
   'myApp.version'
 ]).
 config(function($routeProvider) {
@@ -30,8 +31,5 @@ config(function($routeProvider) {
 
 }])
   .controller('ContactCtrl', [function() {
-
-}])
-  .controller('TabsCtrl', [function() {
 
 }]);

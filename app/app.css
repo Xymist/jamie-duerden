@@ -1,7 +1,48 @@
-.nav,
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.nav, 
 .pagination, 
 .carousel, 
 .panel-title, 
 a { 
 cursor: pointer; 
+}
+
+h1,h2,h3,h4,h5,a{
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  font-family: "Merriweather", serif;
+}
+
+.header-bar{
+  height: 200px;
+  border-color: #BFC8CD;
+  background: #f5f8fa;
+  color: #9EABB3;
+}
+
+.main-container{
+  padding-top: 15px;
 }
