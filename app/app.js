@@ -31,4 +31,7 @@ config(function($routeProvider) {
 }])
   .controller('ContactCtrl', [function() {
 
+}])
+  .controller('TabsCtrl', [function() {
+
 }]);

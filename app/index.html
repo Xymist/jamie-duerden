@@ -14,13 +14,15 @@
 
 
 <body>
-<div class="container-fluid">
-  <ul class="menu"> <!-- TODO: Sort out the sodding routing issue! -->
-    <li><a href="#/home">Home</a></li>
-    <li><a href="#/about">About</a></li>
-    <li><a href="#/contact">Contact</a></li>
-    <li><a href="http://jamieduerden.co.uk/blog/">Blog</a></li>
-  </ul>
+<div class="container content">
+  <div ng-controller="TabsCtrl">
+    <tabset>
+      <tab heading="Home"></tab>
+      <tab heading="About"></tab>
+      <tab heading="Contact"></tab>
+      <tab heading="Blog" href="http://jamieduerden.co.uk/blog/"></tab>
+    </tabset>
+  </div>
 </div>
 
 <div class="container content">
