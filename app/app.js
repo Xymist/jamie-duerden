@@ -20,6 +20,14 @@ config(function($routeProvider) {
       templateUrl: 'partials/contact.html',
       controller: 'ContactCtrl'
   })
+    .when('/projects', {
+      templateUrl: 'partials/projects.html',
+      controller: 'ProjectCtrl'
+  })
+    .when('/oldprojects', {
+      templateUrl: 'partials/oldprojects.html',
+      controller: 'OldProjectCtrl'
+  })
     .otherwise({redirectTo: '/home'});
 
 })
@@ -27,6 +35,12 @@ config(function($routeProvider) {
 
 }])
   .controller('AboutCtrl', [function() {
+
+}])
+  .controller('ProjectCtrl', [function() {
+
+}])
+  .controller('OldProjectCtrl', [function() {
 
 }])
   .controller('ContactCtrl', [function() {
