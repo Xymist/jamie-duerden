@@ -6,7 +6,7 @@ angular.module('myApp', [
   'ui.router',
   'myApp.version'
 ]).
-config(function($routeProvider) {
+config(function($routeProvider, $locationProvider) {
   $routeProvider
     .when('/home', {
     templateUrl: 'partials/home.html',
@@ -29,6 +29,8 @@ config(function($routeProvider) {
       controller: 'OldProjectCtrl'
   })
     .otherwise({redirectTo: '/home'});
+
+  $locationProvider.html5Mode(true);
 
 })
   .controller('HomeCtrl', [function() {
