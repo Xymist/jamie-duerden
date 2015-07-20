@@ -39,8 +39,8 @@ p{
 
 .btn-sidebar{
   border: solid;
-  border-color: #80CFDB;
-  color: #80CFDB;
+  border-color: #AAACAD;
+  color: #AAACAD;
   background: #f5f8fa;
   margin: 10px;
   width: 90%;
@@ -64,9 +64,8 @@ p{
 }
 
 .btn-sidebar:hover{
-  border-color: #65A4AD;
-  color: #65A4AD;
-  background: #f5f8fa;
+  border-color: #787A7A;
+  color: #787A7A;
 }
 
 a.btn-sidebar:hover{
