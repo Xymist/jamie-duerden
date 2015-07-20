@@ -2,6 +2,7 @@
 
 angular.module('myApp', [
   'ngRoute',
+  'ngTouch',
   'ui.bootstrap',
   'ui.router',
   'myApp.version'
