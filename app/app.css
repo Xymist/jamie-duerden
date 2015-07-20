@@ -35,7 +35,7 @@ p,a{
 
 .main-container{
   padding-top: 15px;
-
+  margin-left: 15%;
 }
 
 .btn-sidebar{
@@ -82,5 +82,8 @@ a.btn-sidebar:hover{
 @media screen and (max-width: 720px) {
   .side-bar{
     width: 20%;
+  }
+  .main-container{
+    margin-left: 25%;
   }
 }
