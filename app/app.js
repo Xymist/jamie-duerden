@@ -47,4 +47,16 @@ config(function($routeProvider, $locationProvider) {
 }])
   .controller('ContactCtrl', [function() {
 
-}]);
+}])
+  .controller('FooterCtrl', [function() {
+
+}])
+  .directive("footer", function() {
+    return {
+      restrict: 'A',
+      templateUrl: 'partials/footer.html',
+      scope: true,
+      transclude : false,
+      controller: 'FooterCtrl'
+    };
+});
