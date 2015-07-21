@@ -36,7 +36,7 @@ p,a{
 .main-container{
   padding-top: 50px;
   margin-left: 15%;
-  width: 80%;
+  width: 75%;
 }
 
 .btn-sidebar{
@@ -90,5 +90,6 @@ a.btn-sidebar:hover{
   }
   .main-container{
     margin-left: 25%;
+    width: 70%
   }
 }
