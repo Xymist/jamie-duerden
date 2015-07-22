@@ -93,3 +93,9 @@ a.btn-sidebar:hover{
     width: 70%
   }
 }
+
+.jd-logo:hover{
+  transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+}
