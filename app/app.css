@@ -78,6 +78,9 @@ a.btn-sidebar:hover{
   margin: 10px;
   width: 90%;
   height: auto;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
 }
 
 .footer{
