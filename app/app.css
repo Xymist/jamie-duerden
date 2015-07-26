@@ -36,17 +36,18 @@ p, a {
 }
 
 body{
-    background-image: url("https://placeimg.com/1000/800/tech");
+    background-image: url("https://placeimg.com/1000/800/nature");
     background-size: cover ;
 }
 
 #primary-container{
-    width: 75%;
+    width: 85%;
     margin-top: 9.2%;
     margin-left: 12%;
     border-radius: 6px;
     background: #f5f8fa;
     opacity: 0.75;
+    padding: 30px;
 }
 
 .btn-sidebar {
@@ -101,6 +102,12 @@ a.btn-sidebar:hover {
 
 .footer {
     float: right;
+}
+
+.copy-footer{
+    background: #f5f8fa;
+    opacity: 0.75;
+    bottom: 0;
 }
 
 @media screen and (max-width: 720px) {
