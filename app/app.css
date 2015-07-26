@@ -36,11 +36,11 @@ p, a {
 }
 
 .main-container {
-    background-image: url("");
+    background-image: url("http://placekitten.com/g/1500/1200");
 }
 
 #primary-container{
-    width: 50%;
+    width: 75%;
     padding-top: 9.2%;
     margin-left: 12%;
 }
