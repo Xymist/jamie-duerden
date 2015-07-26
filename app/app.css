@@ -38,6 +38,7 @@ p, a {
 body{
     background-image: url("/site/app/assets/img/background.jpg");
     background-size: cover ;
+    padding-bottom: 20px;
 }
 
 #primary-container{
