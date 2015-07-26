@@ -28,11 +28,11 @@ p, a {
     background: #f5f8fa;
     color: #9EABB3;
     overflow: hidden;
-    z-index: 9999999;
+    z-index: 10;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 15px;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 body{
@@ -73,7 +73,6 @@ body{
     vertical-align: middle;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
-    opacity: 1;
 }
 
 .btn-sidebar:hover {
@@ -99,25 +98,3 @@ a.btn-sidebar:hover {
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
-
-.footer {
-    float: right;
-}
-
-.copy-footer{
-    background: #f5f8fa;
-    opacity: 0.75;
-    bottom: 0;
-}
-
-@media screen and (max-width: 720px) {
-    .side-bar {
-        width: 20%;
-    }
-
-    .main-container {
-        margin-left: 25%;
-        width: 70%
-    }
-}
-
