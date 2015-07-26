@@ -48,9 +48,7 @@ body{
     border-radius: 6px;
     background: #f5f8fa;
     opacity: 0.75;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .btn-sidebar {

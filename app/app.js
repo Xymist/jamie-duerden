@@ -13,10 +13,6 @@ angular.module('myApp', [
                 templateUrl: 'partials/home.html',
                 controller: 'HomeCtrl'
             })
-            .when('/about', {
-                templateUrl: 'partials/about.html',
-                controller: 'AboutCtrl'
-            })
             .when('/projects', {
                 templateUrl: 'partials/projects.html',
                 controller: 'ProjectCtrl'
@@ -33,16 +29,10 @@ angular.module('myApp', [
     .controller('HomeCtrl', [function () {
 
     }])
-    .controller('AboutCtrl', [function () {
-
-    }])
     .controller('ProjectCtrl', [function () {
 
     }])
     .controller('OldProjectCtrl', [function () {
-
-    }])
-    .controller('ContactCtrl', [function () {
 
     }])
     .controller('FooterCtrl', [function () {
