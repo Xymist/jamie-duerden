@@ -14,6 +14,12 @@
           href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"/>
     <base href="/site/app/">
 </head>
+<body>
+
+<div id="name-flag">
+    <h1>Jamie Duerden</h1>
+    <p>Eternally Experimenting</p>
+</div>
 
 <div class="container side-bar">
     <a href="/site/app/home"><img class="jd-logo" src="/site/app/assets/img/logo.png" alt="logo"/></a>
@@ -25,8 +31,11 @@
 
 <div ng-controller="DropdownCtrl">
     <div class="btn-group" dropdown is-open="status.isopen">
-        <div class="nav-button" alt="nav button" dropdown-toggle ng-disabled="disabled"><img id="nav-image" src="/site/app/assets/img/nav-button.png"></div>
+        <div class="nav-button" alt="nav button" dropdown-toggle ng-disabled="disabled"><img id="nav-image"
+                                                                                             src="/site/app/assets/img/nav-button.png">
+        </div>
         <ul id="nav-logo-dropdown" class="dropdown-menu" role="menu" aria-labelledby="single-button">
+            <li role="menuitem"><a class="btn-sidebar" href="/site/app/home">Homepage</a></li>
             <li role="menuitem"><a class="btn-sidebar" href="/site/app/contact">Contact Me</a></li>
             <li role="menuitem"><a class="btn-sidebar" href="/site/app/projects">Current Projects</a></li>
             <li role="menuitem"><a class="btn-sidebar" href="/site/app/oldprojects">Past Projects</a></li>

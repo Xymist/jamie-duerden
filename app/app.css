@@ -172,3 +172,13 @@ a.btn-sidebar:hover {
         display: none;
     }
 }
+
+@media (min-width: 1300px) {
+    #primary-container {
+        max-width: 1000px;
+    }
+}
+
+#name-flag{
+    right: 0;
+}
