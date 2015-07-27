@@ -32,6 +32,7 @@ p, a {
     padding-left: 15px;
     padding-top: 15px;
     opacity: 0.85;
+    width: 200px;
 }
 
 body{
@@ -41,15 +42,6 @@ body{
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
     padding-bottom: 20px;
-}
-
-#primary-container{
-    margin-top: 10%;
-    margin-left: 12%;
-    border-radius: 6px;
-    background: #f5f8fa;
-    opacity: 0.75;
-    padding: 30px;
 }
 
 .btn-sidebar {
@@ -110,40 +102,16 @@ a.btn-sidebar:hover {
     padding-top: 15px;
 }
 
-
-
-@media (min-width: 768px) {
-    .container {
-        width: 450px;
-    }
-    .side-bar{
-        width: 200px;
-    }
+.container-fluid{
+    margin: 10px;
 }
 
-@media (min-width: 992px) {
-    .container {
-        width: 650px;
-    }
-    .side-bar{
-        width: 200px;
-    }
-}
-
-@media (min-width: 1150px) {
-    .container {
-        width: 800px;
-    }
-    .side-bar{
-        width: 200px;
-    }
-}
-
-@media (min-width: 1300px) {
-    .container {
-        width: 1170px;
-    }
-    .side-bar{
-        width: 200px;
-    }
+#primary-container{
+    margin-top: 10%;
+    margin-left: 230px;
+    margin-right: 30px;
+    border-radius: 6px;
+    background: #f5f8fa;
+    opacity: 0.75;
+    padding: 30px;
 }
