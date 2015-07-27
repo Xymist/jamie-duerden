@@ -36,7 +36,7 @@ p, a {
 }
 
 body{
-    background: url("/site/app/assets/img/background.jpg") no-repeat center center fixed;
+    background: url("/site/app/assets/img/background.jpg") no-repeat center top fixed;
     background-size: 100% auto;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
@@ -101,4 +101,9 @@ a.btn-sidebar:hover {
     transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+}
+
+#main-input{
+    width: 100%;
+    min-height: 300px;
 }

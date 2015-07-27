@@ -1,0 +1,19 @@
+<form id="contact-form" action="send_form_email.php" method="post" role="form">
+	<legend>Contact Me Securely</legend>
+
+	<div class="form-group">
+		<label for="name">Your Name</label>
+		<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" tabindex="1" required>
+	</div>
+    <div class="form-group">
+        <label for="name">Your Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email Address" tabindex="2" required>
+    </div>
+
+    <div class="form-group">
+        <label for="main-input">Tell Me Something</label>
+        <textarea id="main-input" placeholder="Text Goes Here" tabindex="3" required></textarea>
+    </div>
+
+    <button class="btn btn-primary" id="encrypt-button" onClick="encrypt()" tabindex="4">Encrypt & Send</button>
+</form>
