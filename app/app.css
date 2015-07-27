@@ -107,7 +107,7 @@ a.btn-sidebar:hover {
 }
 
 #primary-container{
-    margin-top: 10%;
+    margin-top: 70px;
     margin-left: 230px;
     margin-right: 30px;
     border-radius: 6px;
@@ -156,6 +156,9 @@ a.btn-sidebar:hover {
     #nav-logo-dropdown{
         margin-left: 15px;
     }
+    #name-flag{
+        display: none;
+    }
 }
 
 @media (max-width: 640px) and (min-width: 451px) {
@@ -164,6 +167,9 @@ a.btn-sidebar:hover {
     }
     #primary-container{
         margin-left: 30px;
+    }
+    #name-flag{
+        display: none;
     }
 }
 
@@ -180,5 +186,5 @@ a.btn-sidebar:hover {
 }
 
 #name-flag{
-    right: 0;
+    margin-right: 20px;
 }
