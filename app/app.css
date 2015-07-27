@@ -157,7 +157,11 @@ a.btn-sidebar:hover {
     #nav-logo-dropdown{
         margin-left: 15px;
     }
-    #name-flag{
+    #name-flag>h1{
+        margin-top: 23px;
+    }
+    #name-flag>p{
+        margin-top: 15px;
     }
 }
 
@@ -169,13 +173,20 @@ a.btn-sidebar:hover {
         margin-left: 30px;
         margin-top: 20px;
     }
-    #name-flag{
+    #name-flag>h1{
+        margin-top: 23px;
+    }
+    #name-flag>p{
+        margin-top: 15px;
     }
 }
 
 @media (min-width: 640px) {
     .nav-button{
         display: none;
+    }
+    #name-flag>h1{
+        margin-top: 60px;
     }
 }
 
