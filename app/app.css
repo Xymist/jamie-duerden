@@ -127,6 +127,8 @@ a.btn-sidebar:hover {
 
 #nav-logo-dropdown{
     margin-left: 85px;
+    background: #f5f8fa;
+    opacity: 0.75;
 }
 
 @media (max-width: 450px) {
