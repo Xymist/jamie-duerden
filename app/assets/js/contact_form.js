@@ -4,7 +4,7 @@ function encrypt() {
         var pgp_message = openpgp.encryptMessage(pub_key.keys, $('#main-input').val());
         $('#main-input').val(pgp_message);
         $('#encrypt-button').style.display="none";
-        $("contact-form").submit();
+
         return true;
     } else {
         $("#encrypt-button").val("Error");
