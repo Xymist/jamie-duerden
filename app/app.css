@@ -17,7 +17,6 @@ p, a {
 }
 
 .side-bar {
-    width: 12%;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,7 +44,6 @@ body{
 }
 
 #primary-container{
-    width: 85%;
     margin-top: 10%;
     margin-left: 12%;
     border-radius: 6px;
@@ -69,7 +67,7 @@ body{
     user-select: none;
     display: inline-block;
     padding: 6px 12px;
-    font-size: 0.7vw;
+    font-size: small;
     font-weight: bold;
     line-height: 1.42857143;
     text-align: center;
@@ -110,4 +108,42 @@ a.btn-sidebar:hover {
 
 #contact-form{
     padding-top: 15px;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 450px;
+    }
+    .side-bar{
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 650px;
+    }
+    .side-bar{
+        width: 200px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .container {
+        width: 800px;
+    }
+    .side-bar{
+        width: 200px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 1170px;
+    }
+    .side-bar{
+        width: 200px;
+    }
 }
