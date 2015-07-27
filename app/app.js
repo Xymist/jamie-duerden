@@ -17,6 +17,10 @@ angular.module('myApp', [
                 templateUrl: 'partials/projects.html',
                 controller: 'ProjectCtrl'
             })
+            .when('/contact', {
+                templateUrl: 'partials/contact_form.html',
+                controller: 'ContactCtrl'
+            })
             .when('/oldprojects', {
                 templateUrl: 'partials/oldprojects.html',
                 controller: 'OldProjectCtrl'
@@ -30,6 +34,9 @@ angular.module('myApp', [
 
     }])
     .controller('ProjectCtrl', [function () {
+
+    }])
+    .controller('ContactCtrl', [function () {
 
     }])
     .controller('OldProjectCtrl', [function () {
