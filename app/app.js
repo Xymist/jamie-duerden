@@ -18,7 +18,7 @@ angular.module('myApp', [
                 controller: 'ProjectCtrl'
             })
             .when('/contact', {
-                templateUrl: 'partials/contact_form.html',
+                templateUrl: 'partials/contact.html',
                 controller: 'ContactCtrl'
             })
             .when('/oldprojects', {
