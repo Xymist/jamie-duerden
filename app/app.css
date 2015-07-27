@@ -125,6 +125,11 @@ a.btn-sidebar:hover {
     border-radius: 3px;
 }
 
+.nav-div{
+    padding: 5px;
+    background: #f5f8fa;
+}
+
 #nav-logo-dropdown{
     margin-left: 85px;
     background: #f5f8fa;
