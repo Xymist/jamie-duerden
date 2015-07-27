@@ -1,6 +1,6 @@
 function encrypt() {
     if (window.crypto.getRandomValues) {
-        var key = document.getElementById('pubkey');
+        var key = document.getElementById('pub-key').val;
         var pub_key = openpgp.key.readArmored(key);
         var pgp_message = openpgp.encryptMessage(pub_key.keys, $('#main-input').val());
         $('#main-input').val(pgp_message);
