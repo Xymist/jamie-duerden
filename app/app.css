@@ -128,8 +128,11 @@ a.btn-sidebar:hover {
 
 @media (max-width: 450px) {
     #primary-container{
-        margin-left: 5px;
+        margin-left: 5px; !important;
         margin-right: 5px;
+    }
+    .container-fluid{
+        padding: 0px;
     }
 }
 
