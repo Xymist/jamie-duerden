@@ -125,6 +125,7 @@ a.btn-sidebar:hover {
     border-radius: 3px;
     padding: 5px;
     background: #f5f8fa;
+    opacity: 0.75;
 }
 
 .nav-image{
