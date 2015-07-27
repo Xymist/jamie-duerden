@@ -37,10 +37,10 @@ p, a {
 
 body{
     background: url("/site/app/assets/img/background.jpg") no-repeat center center fixed;
-    background-size: auto 100%;
-    -webkit-background-size: auto 100%;
-    -moz-background-size: auto 100%;
-    -o-background-size: auto 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding-bottom: 20px;
 }
 
