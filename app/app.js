@@ -4,8 +4,7 @@ angular.module('myApp', [
     'ngRoute',
     'ngTouch',
     'ui.bootstrap',
-    'ui.router',
-    'myApp.version'
+    'ui.router'
 ]).
     config(function ($routeProvider, $locationProvider) {
         $routeProvider
