@@ -107,3 +107,7 @@ a.btn-sidebar:hover {
     width: 100%;
     min-height: 300px;
 }
+
+#contact-form{
+    padding-top: 15px;
+}

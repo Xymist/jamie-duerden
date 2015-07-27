@@ -22,9 +22,7 @@ if(isset($_POST['email'])) {
 
     $email_message .= "Name: ".clean_string($name)."\n";
 
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-
-    $email_message .= "".clean_string($main_input)."\n";
+    $email_message .= "Message: ".clean_string($main_input)."\n";
 
 $headers = 'From: '.$email_from."\r\n".
 
@@ -34,7 +32,8 @@ $headers = 'From: '.$email_from."\r\n".
 
 @mail($email_to, $email_subject, $email_message, $headers);
 
-}
+header("Location: http://jamieduerden.co.uk/site/app/contact");
+die();
 
 ?>
 
