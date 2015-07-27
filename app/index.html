@@ -23,6 +23,18 @@
     <a class="btn-sidebar" href="http://jamieduerden.co.uk/blog/">Blog</a>
 </div>
 
+<div ng-controller="DropdownCtrl">
+    <div class="btn-group" dropdown is-open="status.isopen">
+        <button id="single-button" type="button" class="btn btn-sidebar nav-button" dropdown-toggle ng-disabled="disabled"></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+            <li role="menuitem"><a class="btn-sidebar" href="/site/app/contact">Contact Me</a></li>
+            <li role="menuitem"><a class="btn-sidebar" href="/site/app/projects">Current Projects</a></li>
+            <li role="menuitem"><a class="btn-sidebar" href="/site/app/oldprojects">Past Projects</a></li>
+            <li role="menuitem"><a class="btn-sidebar" href="http://jamieduerden.co.uk/blog/">Blog</a></li>
+        </ul>
+    </div>
+</div>
+
 <div class="container-fluid">
     <div id="primary-container" ng-view></div>
 </div>

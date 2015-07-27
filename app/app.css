@@ -115,3 +115,15 @@ a.btn-sidebar:hover {
     opacity: 0.75;
     padding: 30px;
 }
+
+@media (max-width: 640px) {
+    .side-bar{
+        display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    .nav-button{
+        display: none;
+    }
+}
