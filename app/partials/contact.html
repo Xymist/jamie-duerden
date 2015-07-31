@@ -5,7 +5,7 @@
 <p>Missives sent to <a href="mailto:jamie@jamieduerden.co.uk">this email address</a> will be checked the same day. If
     you have another email address for me, it's deprecated, but will still be checked once a week or so until
     2015-12-31, at which point I will be assuming nobody uses those addresses any more and anything you send me will
-    vanish into the aether. The form below forwards to this address, but is currently unencrypted and as such ahould not be considered secure.</p>
+    vanish into the aether. The form below forwards to this address, but is currently unencrypted and as such should not be considered secure.</p>
 
 <p>I strongly prefer that anything you send me be encrypted; my public key is <a
         href="/site/app/assets/txt/jamie-pgp.txt">here</a><!--, or you can use the contact form below which automatically encrypts the body of the email-->. If you can sign it as well, even better.</p>
@@ -24,13 +24,17 @@
         <label for="name">Your Email</label>
         <input type="email" class="form-control" name="email" id="email" placeholder="Your Email Address" tabindex="2" required>
     </div>
+    <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" tabindex="3" required>
+    </div>
 
     <div class="form-group">
         <label for="main-input">Tell Me Something</label>
-        <textarea name="main-input" id="main-input" placeholder="Text Goes Here" tabindex="3" required></textarea>
+        <textarea name="main-input" id="main-input" placeholder="Text Goes Here" tabindex="4" required></textarea>
     </div>
 
-    <button class="btn btn-primary" id="encrypt-button" onClick="encrypt()" tabindex="4"><!--Encrypt & -->Send</button>
+    <button class="btn btn-primary" id="encrypt-button" onClick="encrypt()" tabindex="5"><!--Encrypt & -->Send</button>
 </form>
 
 <div id="pub-key" class="hidden">

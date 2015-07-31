@@ -3,14 +3,10 @@
 if(isset($_POST['email'])) {
 
     $email_to = "jamie@jamieduerden.co.uk";
-
-    $email_subject = "New Contact Form Message";
-
+    $email_subject = $_POST['subject'];
     $name = $_POST['name'];
     $email_from = $_POST['email'];
     $main_input = $_POST['main-input'];
-
-    $email_message = "Form details below.\n\n";
 
     function clean_string($string) {
 
@@ -20,9 +16,7 @@ if(isset($_POST['email'])) {
 
     }
 
-    $email_message .= "Name: ".clean_string($name)."\n";
-
-    $email_message .= "Message: ".clean_string($main_input)."\n";
+    $email_message = clean_string($main_input)."\n";
 
 $headers = 'From: '.$email_from."\r\n".
 
