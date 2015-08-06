@@ -11,7 +11,7 @@
                 <accordion-heading>
                     {{group.employer}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
                 </accordion-heading>
-                <h3>{{group.title}}; ({{group.dates}})</h3>
+                <h5>{{group.title}} ({{group.dates}})</h5>
                 <p>{{group.details}}</p>
             </accordion-group>
         </accordion>
@@ -23,7 +23,7 @@
                 <accordion-heading>
                     {{group.school}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
                 </accordion-heading>
-                <h3>{{group.title}} ({{group.dates}})</h3>
+                <h5>{{group.title}} ({{group.dates}})</h5>
                 <p>{{group.details}}</p>
             </accordion-group>
         </accordion>
@@ -31,11 +31,11 @@
 
     <div class="col-md-4" id="hobbyAccordion">
         <accordion close-others="true">
-            <accordion-group ng-repeat="group in jobGroups">
+            <accordion-group ng-repeat="group in hobbyGroups">
                 <accordion-heading>
-                    {{group.employer}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                    {{group.activity}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
                 </accordion-heading>
-                <h3>{{group.title}}; ({{group.dates}})</h3>
+                <h5>{{group.skillLevel}}</h5>
                 <p>{{group.details}}</p>
             </accordion-group>
         </accordion>

@@ -11,13 +11,13 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
         {
             employer: "Maid in Sheffield (BRD22OY Ltd)",
             title: 'Technical Director',
-            dates: 'July 2014-March 2015',
+            dates: 'July 2014 - March 2015',
             details: ''
         },
         {
             employer: "Richard Royds Fine Wines Ltd",
             title: 'Technical Support',
-            dates: 'June 2010 – Current',
+            dates: 'June 2010 - Current',
             details: ''
         }
     ];
@@ -34,6 +34,19 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             title: 'A Levels',
             dates: 'September 2008 - July 2010',
             details: ''
+        }
+    ];
+
+    $scope.hobbyGroups = [
+        {
+            activity: "",
+            skillLevel: "",
+            details: ""
+        },
+        {
+            activity: "",
+            skillLevel: "",
+            details: ""
         }
     ];
 
