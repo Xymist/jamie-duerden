@@ -53,6 +53,6 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
 }).directive('detailDirective', function(){
     return{
         transclude: true,
-        template: '<div id="dataHolder"><h5>{{job.title}}{{school.school}}{{job.dates}}{{school.dates}}{{hobby.skillLevel}}</h5><p>{{job.details}}{{school.details}}{{hobby.details}}</p></div>'
+        template: '<h5>{{job.title}}{{school.school}}{{job.dates}}{{school.dates}}{{hobby.skillLevel}}</h5><p>{{job.details}}{{school.details}}{{hobby.details}}</p>'
     }
 });
