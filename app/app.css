@@ -223,10 +223,3 @@ a.btn-sidebar:hover {
     background: #f5f8fa;
     border-radius: 6px;
 }
-
-#employmentAccordion,
-#educationAccordion,
-#hobbyAccordion{
-    width: 33%;
-    display: inline-block;
-}
