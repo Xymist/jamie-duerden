@@ -7,14 +7,17 @@
 </div>
 
 <div id="accordionContainer" ng-controller="CVAccordionCtrl">
-    <div id="buttonHolder" ng-transclude>
+
+    <div class="btn-group" id="buttonHolder">
         <h3>Employment History</h3>
-        <a class="btn-sidebar" ng-repeat="job in jobGroups" href ng-click="select()" ng-class="{active: active}">{{job.employer}}</a>
+        <label ng-repeat="job in jobGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="{{job.title}}{{job.dates}}<br/>{{job.details}}">{{job.employer}}</label>
         <h3>Education</h3>
-        <a class="btn-sidebar" ng-repeat="school in educationGroups" href ng-click="select()" ng-class="{active: active}">{{school.school}}</a>
+        <label ng-repeat="school in educationGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="{{school.title}}{{school.dates}}<br/>{{school.details}}">{{school.school}}</label>
         <h3>Hobbies</h3>
-        <a class="btn-sidebar" ng-repeat="hobby in hobbyGroups" href ng-click="select()" ng-class="{active: active}">{{hobby.activity}}</a>
+        <label ng-repeat="hobby in hobbyGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="{{hobby.skillLevel}}<br/>{{hobby.details}}">{{hobby.activity}}</label>
     </div>
-    <div detail-directive id="dataHolder">
+
+    <div id="dataHolder">
+        <pre>{{radioModel || 'null'}}</pre>
     </div>
 </div>
