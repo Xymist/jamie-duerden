@@ -229,6 +229,7 @@ a.btn-sidebar:hover {
 #hobbyAccordion{
     position: relative;
     vertical-align: top;
+    float: none;
 }
 
 @media (min-width: 992px) {
