@@ -1,10 +1,11 @@
 <div ng-controller="CVAccordionCtrl">
     <div class="col-md-10 col-md-offset-1" id="skillsList">
+        <h4>Skills</h4>
         <div class="col-md-6" ng-repeat="skill in skillsList">
             <p> - {{skill}}</p>
         </div>
     </div>
-
+<div class="col-md-12" id="accordionContainer">
     <div class="col-md-4" id="employmentAccordion">
         <accordion close-others="true">
             <accordion-group ng-repeat="group in jobGroups">
@@ -40,5 +41,5 @@
             </accordion-group>
         </accordion>
     </div>
-
+</div>
 </div>
