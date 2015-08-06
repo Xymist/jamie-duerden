@@ -4,35 +4,35 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
     $scope.jobGroups = [
         {
             employer: "Citizens' Advice Waverley",
-            title: 'Project Technical Officer',
-            dates: 'January 2015 - Current',
+            title: 'Project Technical Officer ',
+            dates: '(January 2015 - Current)',
             details: ''
         },
         {
             employer: "Maid in Sheffield",
-            title: 'Technical Director',
-            dates: 'July 2014 - March 2015',
+            title: 'Technical Director ',
+            dates: '(July 2014 - March 2015)',
             details: ''
         },
         {
             employer: "Richard Royds Fine Wines Ltd",
-            title: 'Technical Support',
-            dates: 'June 2010 - Current',
+            title: 'Technical Support ',
+            dates: '(June 2010 - Current)',
             details: ''
         }
     ];
 
     $scope.educationGroups = [
         {
-            school: "University of Bath",
+            school: "University of Bath ",
             title: 'BSc Chemistry',
-            dates: 'October 2011 - July 2014',
+            dates: '(October 2011 - July 2014)',
             details: 'Second Class Honours, Second Division'
         },
         {
-            school: "Winchester College",
+            school: "Winchester College ",
             title: 'A Levels',
-            dates: 'September 2008 - July 2010',
+            dates: '(September 2008 - July 2010)',
             details: ''
         }
     ];
@@ -50,4 +50,9 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
         }
     ];
 
+}).directive('detailDirective', function(){
+    return{
+        transclude: true,
+        template: '<div id="dataHolder"><h5>{{job.title}}{{school.school}}{{job.dates}}{{school.dates}}{{hobby.skillLevel}}</h5><p>{{job.details}}{{school.details}}{{hobby.details}}</p></div>'
+    }
 });

@@ -7,22 +7,14 @@
 </div>
 
 <div id="accordionContainer" ng-controller="CVAccordionCtrl">
+    <div id="buttonHolder" ng-transclude>
         <h3>Employment History</h3>
-        <button ng-repeat="tab in jobGroups" heading="{{tab.employer}}" active="tab.active" disable="tab.disabled">
-            <h5>{{tab.title}} - {{tab.dates}}</h5>
-
-            <p>{{tab.details}}</p>
-        </button>
+        <a class="btn-sidebar" ng-repeat="job in jobGroups" href ng-click="select()" ng-class="{active: active}">{{job.employer}}</a>
         <h3>Education</h3>
-        <button ng-repeat="tab in educationGroups" heading="{{tab.school}}" active="tab.active" disable="tab.disabled">
-            <h5>{{tab.title}}</h5>
-
-            <p>{{tab.details}}</p>
-        </button>
+        <a class="btn-sidebar" ng-repeat="school in educationGroups" href ng-click="select()" ng-class="{active: active}">{{school.school}}</a>
         <h3>Hobbies</h3>
-        <button ng-repeat="tab in hobbyGroups" heading="{{tab.activity}}" active="tab.active" disable="tab.disabled">
-            <h5>{{tab.skillLevel}}</h5>
-
-            <p>{{tab.details}}</p>
-        </button>
+        <a class="btn-sidebar" ng-repeat="hobby in hobbyGroups" href ng-click="select()" ng-class="{active: active}">{{hobby.activity}}</a>
+    </div>
+    <div detailDirective>
+    </div>
 </div>
