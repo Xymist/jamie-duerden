@@ -1,5 +1,5 @@
 <div ng-controller="CVAccordionCtrl">
-    <div class="col-md-8 col-md-offset-2" id="skillsList">
+    <div class="col-md-10 col-md-offset-1" id="skillsList">
         <div class="col-md-6" ng-repeat="skill in skillsList">
             <p> - {{skill}}</p>
         </div>
@@ -9,7 +9,7 @@
         <accordion close-others="true">
             <accordion-group ng-repeat="group in jobGroups">
                 <accordion-heading>
-                    {{group.employer}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                    {{group.employer}}
                 </accordion-heading>
                 <h5>{{group.title}} ({{group.dates}})</h5>
                 <p>{{group.details}}</p>
@@ -21,7 +21,7 @@
         <accordion close-others="true">
             <accordion-group ng-repeat="group in educationGroups">
                 <accordion-heading>
-                    {{group.school}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                    {{group.school}}
                 </accordion-heading>
                 <h5>{{group.title}} ({{group.dates}})</h5>
                 <p>{{group.details}}</p>
@@ -33,7 +33,7 @@
         <accordion close-others="true">
             <accordion-group ng-repeat="group in hobbyGroups">
                 <accordion-heading>
-                    {{group.activity}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                    {{group.activity}}
                 </accordion-heading>
                 <h5>{{group.skillLevel}}</h5>
                 <p>{{group.details}}</p>
