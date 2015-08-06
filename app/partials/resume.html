@@ -1,54 +1,29 @@
-<div ng-controller="CVAccordionCtrl">
+<div id="skillsList">
+    <h3>Skills</h3>
 
-    <div id="skillsList">
-        <h3>Skills</h3>
-
-        <div ng-repeat="skill in skillsList">
-            <p> - {{skill}}</p>
-        </div>
+    <div ng-repeat="skill in skillsList">
+        <p> - {{skill}}</p>
     </div>
+</div>
 
-    <div id="accordionContainer">
-        <div id="employmentAccordion">
+<div id="accordionContainer" ng-controller="CVAccordionCtrl">
+    <div id="buttonHolder">
+        <tabset vertical="true" type="pills">
             <h3>Employment History</h3>
-            <accordion close-others="true">
-                <accordion-group ng-repeat="group in jobGroups">
-                    <accordion-heading>
-                        {{group.employer}}
-                    </accordion-heading>
-                    <h5>{{group.title}} ({{group.dates}})</h5>
-
-                    <p>{{group.details}}</p>
-                </accordion-group>
-            </accordion>
-        </div>
-
-        <div id="educationAccordion">
+            <tab ng-repeat="tab in jobGroups" heading="{{tab.employer}}" active="tab.active" disable="tab.disabled">
+                {{tab.employer}}
+            </tab>
             <h3>Education</h3>
-            <accordion close-others="true">
-                <accordion-group ng-repeat="group in educationGroups">
-                    <accordion-heading>
-                        {{group.school}}
-                    </accordion-heading>
-                    <h5>{{group.title}} ({{group.dates}})</h5>
-
-                    <p>{{group.details}}</p>
-                </accordion-group>
-            </accordion>
-        </div>
-
-        <div id="hobbyAccordion">
+            <tab ng-repeat="tab in educationGroups" heading="{{tab.school}}" active="tab.active" disable="tab.disabled">
+                {{tab.school}}
+            </tab>
             <h3>Hobbies</h3>
-            <accordion close-others="true">
-                <accordion-group ng-repeat="group in hobbyGroups">
-                    <accordion-heading>
-                        {{group.activity}}
-                    </accordion-heading>
-                    <h5>{{group.skillLevel}}</h5>
+            <tab ng-repeat="tab in hobbyGroups" heading="{{tab.activity}}" active="tab.active" disable="tab.disabled">
+                {{tab.activity}}
+            </tab>
+        </tabset>
+    </div>
+    <div id="dataHolder">
 
-                    <p>{{group.details}}</p>
-                </accordion-group>
-            </accordion>
-        </div>
     </div>
 </div>

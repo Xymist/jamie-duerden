@@ -224,19 +224,12 @@ a.btn-sidebar:hover {
     border-radius: 6px;
 }
 
-#employmentAccordion,
-#educationAccordion,
-#hobbyAccordion{
-    position: relative;
-    vertical-align: top;
-    float: none;
+#buttonHolder {
+    width: 33%;
+    display: inline-block;
 }
 
-@media (min-width: 992px) {
-    #employmentAccordion,
-    #educationAccordion,
-    #hobbyAccordion {
-        width: 33%;
-        display: inline-block;
-    }
+#dataHolder{
+    width: 66%;
+    display: inline-block;
 }

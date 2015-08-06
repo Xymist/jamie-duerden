@@ -15,7 +15,7 @@ angular.module('myApp.routes', [])
                 templateUrl: 'partials/contact.html',
                 controller: 'ContactCtrl'
             })
-            .when('/oldprojects', {
+            .when('/resume', {
                 templateUrl: 'partials/resume.html',
                 controller: 'CVCtrl'
             })
