@@ -7,8 +7,8 @@
 </div>
 
 <div id="accordionContainer" ng-controller="CVAccordionCtrl">
-    <div id="buttonHolder">
-        <tabset vertical="true" type="pills">
+    <tabset vertical="true" type="pills">
+        <div id="buttonHolder">
             <h3>Employment History</h3>
             <tab ng-repeat="tab in jobGroups" heading="{{tab.employer}}" active="tab.active" disable="tab.disabled">
                 <h5>{{tab.title}} - {{tab.dates}}</h5>
@@ -27,13 +27,13 @@
 
                 <p>{{tab.details}}</p>
             </tab>
-        </tabset>
-    </div>
-    <div id="dataHolder" class="tab-content">
-        <div class="tab-pane"
-             ng-repeat="tab in tabs"
-             ng-class="{active: tab.active}"
-             tab-content-transclude="tab">
         </div>
-    </div>
+        <div id="dataHolder" class="tab-content">
+            <div class="tab-pane"
+                 ng-repeat="tab in tabs"
+                 ng-class="{active: tab.active}"
+                 tab-content-transclude="tab">
+            </div>
+        </div>
+    </tabset>
 </div>
