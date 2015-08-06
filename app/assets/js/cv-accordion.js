@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.cvAccordion').controller('CVAccordionCtrl', function ($scope) {
+angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function ($scope) {
     $scope.groups = [
         {
             employer: "Citizens' Advice Waverley",
