@@ -8,26 +8,24 @@
 
 <div id="accordionContainer" ng-controller="CVAccordionCtrl">
     <tabset vertical="true" type="pills">
-        <div id="buttonHolder">
-            <h3>Employment History</h3>
-            <tab ng-repeat="tab in jobGroups" heading="{{tab.employer}}" active="tab.active" disable="tab.disabled">
-                <h5>{{tab.title}} - {{tab.dates}}</h5>
+        <h3>Employment History</h3>
+        <tab ng-repeat="tab in jobGroups" heading="{{tab.employer}}" active="tab.active" disable="tab.disabled">
+            <h5>{{tab.title}} - {{tab.dates}}</h5>
 
-                <p>{{tab.details}}</p>
-            </tab>
-            <h3>Education</h3>
-            <tab ng-repeat="tab in educationGroups" heading="{{tab.school}}" active="tab.active" disable="tab.disabled">
-                <h5>{{tab.title}}</h5>
+            <p>{{tab.details}}</p>
+        </tab>
+        <h3>Education</h3>
+        <tab ng-repeat="tab in educationGroups" heading="{{tab.school}}" active="tab.active" disable="tab.disabled">
+            <h5>{{tab.title}}</h5>
 
-                <p>{{tab.details}}</p>
-            </tab>
-            <h3>Hobbies</h3>
-            <tab ng-repeat="tab in hobbyGroups" heading="{{tab.activity}}" active="tab.active" disable="tab.disabled">
-                <h5>{{tab.skillLevel}}</h5>
+            <p>{{tab.details}}</p>
+        </tab>
+        <h3>Hobbies</h3>
+        <tab ng-repeat="tab in hobbyGroups" heading="{{tab.activity}}" active="tab.active" disable="tab.disabled">
+            <h5>{{tab.skillLevel}}</h5>
 
-                <p>{{tab.details}}</p>
-            </tab>
-        </div>
+            <p>{{tab.details}}</p>
+        </tab>
         <div id="dataHolder" class="tab-content">
             <div class="tab-pane"
                  ng-repeat="tab in tabs"
