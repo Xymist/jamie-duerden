@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('myApp.cvAccordion').controller('CVAccordionCtrl', function ($scope) {
     $scope.groups = [
         {
