@@ -1,15 +1,15 @@
 <div ng-controller="CVAccordionCtrl">
 
-    <div class="col-lg-10 col-lg-offset-1" id="skillsList">
+    <div id="skillsList">
         <h3>Skills</h3>
 
-        <div class="col-lg-6" ng-repeat="skill in skillsList">
+        <div ng-repeat="skill in skillsList">
             <p> - {{skill}}</p>
         </div>
     </div>
 
     <div class="col-lg-12" id="accordionContainer">
-        <div class="col-lg-4" id="employmentAccordion">
+        <div id="employmentAccordion">
             <h3>Employment History</h3>
             <accordion close-others="true">
                 <accordion-group ng-repeat="group in jobGroups">
@@ -23,7 +23,7 @@
             </accordion>
         </div>
 
-        <div class="col-lg-4" id="educationAccordion">
+        <div id="educationAccordion">
             <h3>Education</h3>
             <accordion close-others="true">
                 <accordion-group ng-repeat="group in educationGroups">
@@ -37,7 +37,7 @@
             </accordion>
         </div>
 
-        <div class="col-lg-4" id="hobbyAccordion">
+        <div id="hobbyAccordion">
             <h3>Hobbies</h3>
             <accordion close-others="true">
                 <accordion-group ng-repeat="group in hobbyGroups">
