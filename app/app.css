@@ -163,6 +163,11 @@ a.btn-sidebar:hover {
     #name-flag>p{
         margin-top: 15px;
     }
+    #skillsList{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 640px) and (min-width: 451px) {
@@ -179,6 +184,10 @@ a.btn-sidebar:hover {
     #name-flag>p{
         margin-top: 15px;
     }
+    #skillsList{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 640px) {
@@ -192,6 +201,9 @@ a.btn-sidebar:hover {
 
 @media (min-width: 1300px) {
     #primary-container {
+        max-width: 1000px;
+    }
+    #skillsList{
         max-width: 1000px;
     }
 }
@@ -209,4 +221,6 @@ a.btn-sidebar:hover {
 #hobbyAccordion,
 #skillsList{
     background: #f5f8fa;
+    border-radius: 6px;
 }
+
