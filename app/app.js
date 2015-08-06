@@ -4,7 +4,8 @@ angular.module('myApp', [
     'ngRoute',
     'ngTouch',
     'ui.bootstrap',
-    'ui.router'
+    'ui.router',
+    'myApp.cvAccordion'
 ]).
     config(function ($routeProvider, $locationProvider) {
         $routeProvider
