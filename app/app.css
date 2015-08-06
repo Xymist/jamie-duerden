@@ -204,6 +204,9 @@ a.btn-sidebar:hover {
     padding-top: 20px;
 }
 
-#skillList>p{
-    line-height: ;
+#employmentAccordion,
+#educationAccordion,
+#hobbyAccordion,
+#skillsList{
+    background: #f5f8fa;
 }
