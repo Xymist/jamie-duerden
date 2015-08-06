@@ -39,13 +39,13 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
 
     $scope.hobbyGroups = [
         {
-            activity: "",
-            skillLevel: "",
+            activity: "Skydiving",
+            skillLevel: "BPA A Licence",
             details: ""
         },
         {
-            activity: "",
-            skillLevel: "",
+            activity: "SCUBA Diving",
+            skillLevel: "PADI Open Water Diver",
             details: ""
         }
     ];

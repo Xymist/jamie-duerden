@@ -1,45 +1,51 @@
 <div ng-controller="CVAccordionCtrl">
+
     <div class="col-md-10 col-md-offset-1" id="skillsList">
-        <h4>Skills</h4>
+        <h3>Skills</h3>
+
         <div class="col-md-6" ng-repeat="skill in skillsList">
             <p> - {{skill}}</p>
         </div>
     </div>
-<div class="col-md-12" id="accordionContainer">
-    <div class="col-md-4" id="employmentAccordion">
-        <accordion close-others="true">
-            <accordion-group ng-repeat="group in jobGroups">
-                <accordion-heading>
-                    {{group.employer}}
-                </accordion-heading>
-                <h5>{{group.title}} ({{group.dates}})</h5>
-                <p>{{group.details}}</p>
-            </accordion-group>
-        </accordion>
-    </div>
 
-    <div class="col-md-4" id="educationAccordion">
-        <accordion close-others="true">
-            <accordion-group ng-repeat="group in educationGroups">
-                <accordion-heading>
-                    {{group.school}}
-                </accordion-heading>
-                <h5>{{group.title}} ({{group.dates}})</h5>
-                <p>{{group.details}}</p>
-            </accordion-group>
-        </accordion>
-    </div>
+    <div class="col-md-12" id="accordionContainer">
+        <div class="col-md-4" id="employmentAccordion">
+            <accordion close-others="true">
+                <accordion-group ng-repeat="group in jobGroups">
+                    <accordion-heading>
+                        {{group.employer}}
+                    </accordion-heading>
+                    <h5>{{group.title}} ({{group.dates}})</h5>
 
-    <div class="col-md-4" id="hobbyAccordion">
-        <accordion close-others="true">
-            <accordion-group ng-repeat="group in hobbyGroups">
-                <accordion-heading>
-                    {{group.activity}}
-                </accordion-heading>
-                <h5>{{group.skillLevel}}</h5>
-                <p>{{group.details}}</p>
-            </accordion-group>
-        </accordion>
+                    <p>{{group.details}}</p>
+                </accordion-group>
+            </accordion>
+        </div>
+
+        <div class="col-md-4" id="educationAccordion">
+            <accordion close-others="true">
+                <accordion-group ng-repeat="group in educationGroups">
+                    <accordion-heading>
+                        {{group.school}}
+                    </accordion-heading>
+                    <h5>{{group.title}} ({{group.dates}})</h5>
+
+                    <p>{{group.details}}</p>
+                </accordion-group>
+            </accordion>
+        </div>
+
+        <div class="col-md-4" id="hobbyAccordion">
+            <accordion close-others="true">
+                <accordion-group ng-repeat="group in hobbyGroups">
+                    <accordion-heading>
+                        {{group.activity}}
+                    </accordion-heading>
+                    <h5>{{group.skillLevel}}</h5>
+
+                    <p>{{group.details}}</p>
+                </accordion-group>
+            </accordion>
+        </div>
     </div>
-</div>
 </div>
