@@ -1,12 +1,44 @@
-<p>Nothing to see here. Move along.</p>
-<!--<div ng-controller="CVAccordionCtrl">
-    <accordion close-others="true">
-        <accordion-group ng-repeat="group in groups">
-            <accordion-heading>
-                {{group.employer}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
-            </accordion-heading>
-            <h3>{{group.title}}; {{group.dates}}</h3>
-            <p>{{group.details}}</p>
-        </accordion-group>
-    </accordion>
-</div>-->
+<div ng-controller="CVAccordionCtrl">
+    <div class="col-md-4 col-md-offset-2" id="skillsList">
+        <div class="col-md-6" ng-repeat="skill in skillsList">
+            <p> - {{skill}}</p>
+        </div>
+    </div>
+
+    <div class="col-md-4" id="employmentAccordion">
+        <accordion close-others="true">
+            <accordion-group ng-repeat="group in jobGroups">
+                <accordion-heading>
+                    {{group.employer}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                </accordion-heading>
+                <h3>{{group.title}}; ({{group.dates}})</h3>
+                <p>{{group.details}}</p>
+            </accordion-group>
+        </accordion>
+    </div>
+
+    <div class="col-md-4" id="educationAccordion">
+        <accordion close-others="true">
+            <accordion-group ng-repeat="group in educationGroups">
+                <accordion-heading>
+                    {{group.school}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                </accordion-heading>
+                <h3>{{group.title}} ({{group.dates}})</h3>
+                <p>{{group.details}}</p>
+            </accordion-group>
+        </accordion>
+    </div>
+
+    <div class="col-md-4" id="hobbyAccordion">
+        <accordion close-others="true">
+            <accordion-group ng-repeat="group in jobGroups">
+                <accordion-heading>
+                    {{group.employer}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                </accordion-heading>
+                <h3>{{group.title}}; ({{group.dates}})</h3>
+                <p>{{group.details}}</p>
+            </accordion-group>
+        </accordion>
+    </div>
+
+</div>
