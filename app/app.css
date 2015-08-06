@@ -231,5 +231,6 @@ a.btn-sidebar:hover {
 
 #dataHolder{
     width: 66%;
+    height: 2575px;
     display: inline-block;
 }
