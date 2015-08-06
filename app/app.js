@@ -5,6 +5,7 @@ angular.module('myApp', [
     'ngTouch',
     'ui.bootstrap',
     'ui.router',
+    'ngAnimate',
     'myApp.cvAccordion'
 ]).
     config(function ($routeProvider, $locationProvider) {
