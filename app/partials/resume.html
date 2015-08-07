@@ -10,17 +10,11 @@
 
     <div class="btn-group" id="buttonHolder">
         <h3>Employment History</h3>
-        <label ng-repeat="job in jobGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="'test1'">{{job.employer}}</label>
+        <button ng-repeat="job in jobGroups" class="btn-sidebar" type="button" ng-model="radioModel" btn-radio="job.title">{{job.employer}}</button>
         <h3>Education</h3>
-        <label ng-repeat="school in educationGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="'test2'">{{school.school}}</label>
+        <button ng-repeat="school in educationGroups" class="btn-sidebar" type="button" ng-model="radioModel" btn-radio="school.title">{{school.school}}</button>
         <h3>Hobbies</h3>
-        <label ng-repeat="hobby in hobbyGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="'test3'">{{hobby.activity}}</label>
-    </div>
-
-    <div class="btn-group">
-        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Left'">Left</label>
-        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Middle'">Middle</label>
-        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Right'">Right</label>
+        <button ng-repeat="hobby in hobbyGroups" class="btn-sidebar" type="button" ng-model="radioModel" btn-radio="hobby.skillLevel">{{hobby.activity}}</button>
     </div>
 
     <div id="dataHolder">
