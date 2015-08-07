@@ -6,7 +6,7 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
     $scope.jobGroups = [
         {
             employer: "Citizens' Advice Waverley",
-            title: '<h3>Project Technical Officer (January 2015 - Current)</h3>',
+            title: 'Project Technical Officer (January 2015 - Current)',
             details: 'Working to provide VoIP'
         },
         {
