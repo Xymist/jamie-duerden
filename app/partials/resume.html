@@ -10,7 +10,7 @@
 
     <div class="btn-group" id="buttonHolder">
         <h3>Employment History</h3>
-        <button ng-repeat="job in jobGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="job.title">{{job.employer}}</button>
+        <button ng-repeat="job in jobGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="job.title job.details">{{job.employer}}</button>
         <h3>Education</h3>
         <button ng-repeat="school in educationGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="school.title">{{school.school}}</button>
         <h3>Hobbies</h3>
