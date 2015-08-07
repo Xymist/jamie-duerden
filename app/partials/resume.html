@@ -1,6 +1,3 @@
-<h3>James Duerden</h3>
-<p>Chemistry Graduate with strong experience in technology, IT and project coordination. Experience with suggesting and driving efficiency gains, interfacing with contractors and clients, developing solutions to technical problems, and delivering time-critical outcomes.</p>
-
 <div id="skillsList">
     <h3>Skills</h3>
 
@@ -13,11 +10,11 @@
 
     <div class="btn-group" id="buttonHolder">
         <h3>Employment History</h3>
-        <label ng-repeat="job in jobGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="{{job.title}}">{{job.employer}}</label>
+        <label ng-repeat="job in jobGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="'test1">{{job.employer}}</label>
         <h3>Education</h3>
-        <label ng-repeat="school in educationGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="{{school.title}}">{{school.school}}</label>
+        <label ng-repeat="school in educationGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="'test2">{{school.school}}</label>
         <h3>Hobbies</h3>
-        <label ng-repeat="hobby in hobbyGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="{{hobby.skillLevel}}">{{hobby.activity}}</label>
+        <label ng-repeat="hobby in hobbyGroups" class="btn-sidebar" ng-model="radioModel" btn-radio="'test3">{{hobby.activity}}</label>
     </div>
 
     <div id="dataHolder">
