@@ -227,14 +227,19 @@ a.btn-sidebar:hover {
 #buttonHolder {
     width: 33%;
     display: inline-block;
-    height: 161px;
+    min-height: 161px;
 }
 
 #dataHolder{
     width: 66%;
-    height: 469px;
+    min-height: 469px;
     border: 2px solid;
     border-color: #AAACAD;
     border-radius: 6px;
     display: inline-block;
+}
+
+#dataHolder>p,
+#dataHolder>h3{
+    padding-left: 10px;
 }
