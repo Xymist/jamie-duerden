@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function ($scope) {
-    $scope.radio = {model :  undefined};
+    $scope.radio = {model :  "Experience"};
 
     $scope.jobGroups = [
         {
