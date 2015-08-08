@@ -9,6 +9,7 @@
 <div id="accordionContainer" ng-controller="CVAccordionCtrl">
 
     <div class="btn-group" id="buttonHolder">
+        <button class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="job" style="display: none" active></button>
         <h3>Employment History</h3>
         <button ng-repeat="job in jobGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="job">{{job.employer}}</button>
         <h3>Education</h3>
