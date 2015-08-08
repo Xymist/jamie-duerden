@@ -1,6 +1,9 @@
 'use strict';
 
 angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function ($scope) {
+
+    var reader = new FileReader();
+
     $scope.radio = {model :  undefined};
 
     $scope.jobGroups = [
@@ -8,7 +11,7 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             employer: "Citizens' Advice Waverley",
             title: 'Project Technical Officer',
             dates: '(January 2015 - Current)',
-            details: 'Working to provide VoIP'
+            details: reader.readAsText(/site/app/assets/txt/jamie-pgp.txt);
         },
         {
             employer: "Maid in Sheffield",
