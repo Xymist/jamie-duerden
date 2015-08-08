@@ -14,13 +14,13 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             employer: "Maid in Sheffield",
             title: 'Technical Director ',
             dates: '(July 2014 - March 2015)',
-            details: ''
+            details: 'Website construction'
         },
         {
             employer: "Richard Royds Fine Wines Ltd",
             title: 'Technical Support ',
             dates: '(June 2010 - Current)',
-            details: ''
+            details: 'Systems administration'
         }
     ];
 
@@ -35,7 +35,7 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             school: "Winchester College ",
             title: 'A Levels',
             dates: '(September 2008 - July 2010)',
-            details: ''
+            details: 'Various'
         }
     ];
 
@@ -43,12 +43,12 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
         {
             activity: "Skydiving",
             skillLevel: "BPA A Licence",
-            details: ""
+            details: "Summer only"
         },
         {
             activity: "SCUBA Diving",
             skillLevel: "PADI Open Water Diver",
-            details: ""
+            details: "Summer only"
         }
     ];
 
