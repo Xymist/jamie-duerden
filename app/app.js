@@ -7,6 +7,8 @@ angular.module('myApp', [
     'ui.bootstrap',
     'ui.router',
     'ngAnimate',
+    'angulartics',
+    'angulartics.google.analytics',
     'myApp.dropdownController',
     'myApp.cvAccordion',
     'myApp.resume'
