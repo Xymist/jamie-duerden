@@ -24,5 +24,5 @@ angular.module('myApp', [
     }])
     .config(function ($analyticsProvider) {
         $analyticsProvider.firstPageview(true);
-        $analyticsProvider.withBase(true);
+        $analyticsProvider.withAutoBase(true);
     });
