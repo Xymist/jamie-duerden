@@ -21,4 +21,8 @@ angular.module('myApp', [
     }])
     .controller('ContactCtrl', [function () {
 
-    }]);
+    }])
+    .config(function ($analyticsProvider) {
+        $analyticsProvider.firstPageview(true);
+        $analyticsProvider.withAutoBase(true);
+    });
