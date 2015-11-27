@@ -236,7 +236,7 @@ a.btn-sidebar:hover {
     border: 2px solid;
     border-color: #AAACAD;
     border-radius: 6px;
-    margin-top: 65px;
+    margin-top: 66px;
     display: inline-block;
 }
 
@@ -246,5 +246,5 @@ a.btn-sidebar:hover {
 }
 
 #resumeHolder{
-    height: 1124px;
+    height: 1040px;
 }
