@@ -236,10 +236,15 @@ a.btn-sidebar:hover {
     border: 2px solid;
     border-color: #AAACAD;
     border-radius: 6px;
+    margin-top: 65px;
     display: inline-block;
 }
 
 #dataHolder>p,
 #dataHolder>h4{
     padding-left: 10px;
+}
+
+#resumeHolder{
+    height: 1124px;
 }
