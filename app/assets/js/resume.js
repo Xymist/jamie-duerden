@@ -13,7 +13,7 @@ angular.module('myApp.resume', []).controller('CVCtrl', function ($scope) {
     $scope.skillsList2 = [
         "Project stream planning",
         "Teamwork and coordination",
-        "Web construction and administration with HTML5, SCSS, AngularJS, Ruby on Rails",
+        "Web construction and administration with HTML5, CSS3, Angular 1, Ruby on Rails, SCSS",
         "Detailed taste memory",
         "Competent with Microsoft Word, Excel, PowerPoint and Publisher",
         "Competent with the Linux command line interface.",
