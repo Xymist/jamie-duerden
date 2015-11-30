@@ -2,7 +2,10 @@
 <div id="skillsList">
     <h3>Skills</h3>
 
-    <div ng-repeat="skill in skillsList">
+    <div class="col-md-6" ng-repeat="skill in skillsList1">
+        <p> - {{skill}}</p>
+    </div>
+    <div class="col-md-6" ng-repeat="skill in skillsList2">
         <p> - {{skill}}</p>
     </div>
 </div>

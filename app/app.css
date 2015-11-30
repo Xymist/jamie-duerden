@@ -225,13 +225,13 @@ a.btn-sidebar:hover {
 }
 
 #buttonHolder {
-    width: 30%;
+    /*width: 30%;*/
     display: inline-block;
     height: 226px;
 }
 
 #dataHolder{
-    width: 65%;
+    /*width: 65%;*/
     height: 470px;
     border: 2px solid;
     border-color: #AAACAD;
