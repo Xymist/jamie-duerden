@@ -208,7 +208,7 @@ a.btn-sidebar:hover {
     }
 }
 
-@media (min-width: 640px) and(max-width: 1600px){
+@media (min-width: 640px) and (max-width: 1600px){
     #primary-container{
         margin-top: 169px;
     }
