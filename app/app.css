@@ -246,5 +246,9 @@ a.btn-sidebar:hover {
 }
 
 #resumeHolder{
-    height: 1040px;
+    height: 897px;
+}
+
+.cv-btn{
+    margin-top: 30px;
 }
