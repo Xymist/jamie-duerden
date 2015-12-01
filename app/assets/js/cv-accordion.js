@@ -15,14 +15,14 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             employer: "Maid in Sheffield",
             title: 'Technical Director ',
             dates: '(July 2014 - March 2015)',
-            details: 'This was a business set up by myself and a friend as an experiment after university. I designed and built the website (it was my first major Ruby project), the code for which you can see in the Archived Projects section.' +
+            details: 'This was a business set up by myself and a friend as an experiment after university. I designed and built the website (it was my first major Ruby project), the code for which you can see in the Archived Projects section.' +'\n' + '\n' +
             'I learned a number of things from this project, some of them to do with coding and web design, but also with business. Although I wasn\'t involved in the acquisition of human resources, I did oversee the payments and bookings system, and was responsible for maintaining the server and website which were the core of the business. '
         },
         {
             employer: "Richard Royds Fine Wines Ltd",
             title: 'Technical Support ',
             dates: '(June 2010 - Current)',
-            details: 'From developing my taste memory and food-matching skills in selling cheese and fine wines, to hosting and assisting with the hosting of wine tastings, through to establishing and maintaining the website, product database and stock control systems for the business, I have done a great deal of work for Richard over the last five years, on all sides of the business.' +
+            details: 'From developing my taste memory and food-matching skills in selling cheese and fine wines, to hosting and assisting with the hosting of wine tastings, through to establishing and maintaining the website, product database and stock control systems for the business, I have done a great deal of work for Richard over the last five years, on all sides of the business.' + '\n' + '\n' +
             'I no longer have any hand in the retail side of the business, though I do still assist with hosting wine tastings. However, I remain the systems administrator, and have at this point constructed or installed all the computer hardware used on site.'
         }
     ];

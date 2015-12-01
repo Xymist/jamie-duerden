@@ -107,7 +107,7 @@ a.btn-sidebar:hover {
 }
 
 #primary-container{
-    margin-top: 170px;
+    margin-top: 30px;
     margin-left: 230px;
     margin-right: 30px;
     border-radius: 6px;
@@ -225,13 +225,11 @@ a.btn-sidebar:hover {
 }
 
 #buttonHolder {
-    /*width: 30%;*/
     display: inline-block;
     height: 226px;
 }
 
 #dataHolder{
-    /*width: 65%;*/
     height: 470px;
     border: 2px solid;
     border-color: #AAACAD;
