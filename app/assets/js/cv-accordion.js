@@ -15,7 +15,7 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             employer: "Maid in Sheffield",
             title: 'Technical Director ',
             dates: '(July 2014 - March 2015)',
-            details: 'This was a business set up by myself and a friend as an experiment after university. I designed and built the website (it was my first major Ruby project), the code for which you can see in the Archived Projects section.' +'\n' + '\n' +
+            details: 'This was a business set up by myself and a friend as an experiment after university. I designed and built the website (it was my first major Ruby project), the code for which you can see in the Archived Projects section.' + '\n' + '\n' +
             'I learned a number of things from this project, some of them to do with coding and web design, but also with business. Although I wasn\'t involved in the acquisition of human resources, I did oversee the payments and bookings system, and was responsible for maintaining the server and website which were the core of the business. '
         },
         {
