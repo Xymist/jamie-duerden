@@ -9,27 +9,23 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             employer: "Citizens' Advice Waverley",
             title: 'Project Technical Officer',
             dates: '(January 2015 - Current)',
-            details: 'The Advice Services Transformation Fund project was derived from monies provided by the Big Lottery Fund, and involved a number of interconnected streams directed towards improving the sustainability of Citizens Advice Waverley in particular and of advice services provision within Waverley in general.' +
-            '' +
-            'In January 2015 I made the suggestion that CAW might benefit from a Voice over IP telephone system, partly as a cost saving measure, but also as it would allow growth across the district and more streamlined, unified communications and monitoring. Furthermore, there was the option of providing communications to other organisations either at a profit or at cost. I was brought on board to investigate the merits of these options, and to implement them if it proved worthwhile. ' +
-            '' +
-            'I identified an approximately 20% saving in year-on-year costs and recommended this implementation; I then investigated suppliers and generated a shortlist of organisations who were invited to tender, which tenders I reviewed and submitted a recommended supplier which was ultimately accepted.' +
-            '' +
-            'I then liaised with the chosen supplier, management, volunteers and trustees to design the system configuration and routing, followed by overseeing the installation of the hardware and new FTTC lines across the Waverley district.' +
-            '' +
-            'This was followed up by continued refinement of the configuration, and training (both 1-to-1 and en masse) in the use and maintenance of the new system.'
+            details: 'The Advice Services Transformation Fund project is funded by the Big Lottery, and has given money to many Citizens Advice offices and other charities across the UK. Please see my Projects page for more details.'
         },
         {
             employer: "Maid in Sheffield",
             title: 'Technical Director ',
             dates: '(July 2014 - March 2015)',
-            details: 'Website construction'
+            details: 'This was a business set up by myself and a friend as an experiment after university. I designed and built the website (it was my first major Ruby project), the code for which you can see in the Archived Projects section.' +
+            '<br/><br/>' +
+            'I learned a number of things from this project, some of them to do with coding and web design, but also with business. Although I wasn\'t involved in the acquisition of human resources, I did oversee the payments and bookings system, and was responsible for maintaining the server and website which were the core of the business. '
         },
         {
             employer: "Richard Royds Fine Wines Ltd",
             title: 'Technical Support ',
             dates: '(June 2010 - Current)',
-            details: 'Systems administration'
+            details: 'From developing my taste memory and food-matching skills in selling cheese and fine wines, to hosting and assisting with the hosting of wine tastings, through to establishing and maintaining the website, product database and stock control systems for the business, I have done a great deal of work for Richard over the last five years, on all sides of the business.' +
+            '<br/><br/>' +
+            'I no longer have any hand in the retail side of the business, though I do still assist with hosting wine tastings. However, I remain the systems administrator, and have at this point constructed or installed all the computer hardware used on site.'
         }
     ];
 
