@@ -63,10 +63,4 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             details3: "Other: Javascript (with jQuery and Angular for web development), Ruby (mostly for Rails), Python, a very small amount of R. "
         }
     ];
-
-}).directive('detailDirective', function(){ //This doesn't even do anything any more, I think...
-    return{
-        transclude: true,
-        template: '<h5>{{job.title}}{{school.school}}{{job.dates}}{{school.dates}}{{hobby.skillLevel}}</h5><p>{{job.details}}{{school.details}}{{hobby.details}}</p>'
-    }
 });
