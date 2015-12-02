@@ -9,7 +9,7 @@
         </div>
     </div>
 
-    <div id="accordionContainer" ng-controller="CVAccordionCtrl">
+    <div class="col-md-12" id="accordionContainer" ng-controller="CVAccordionCtrl">
         <div class="col-md-4" id="buttonHolder">
             <h3>Employment History</h3>
             <button ng-repeat="job in jobGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="job">{{job.employer}}</button>
