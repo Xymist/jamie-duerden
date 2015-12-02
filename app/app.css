@@ -270,7 +270,7 @@ a.btn-sidebar:hover {
 }
 
 ::-webkit-scrollbar-track {
-    border: 1px solid #AAACAD;
+    border: 1px solid #f5f8fa;
     border-radius: 10px;
 }
 
@@ -280,5 +280,5 @@ a.btn-sidebar:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f5f8fa;
+    background: #a2a4a5;
 }
