@@ -8,7 +8,7 @@
     vanish into the aether, maybe.</p>
 
 <p>I strongly prefer that anything you send me be encrypted; my public key is <a
-        href="/site/app/assets/txt/jamie-pgp.txt">here</a><!--, or you can use the contact form below which automatically encrypts the body of the email-->. If you can sign it as well, even better.</p>
+        href="/site/app/assets/txt/jamie-pgp.txt">here</a><!--, or you can use the contact form below which automatically encrypts the body of the email TODO: No it doesn't!-->. If you can sign it as well, even better.</p>
 
 <p>If you want to hire me for something, please include [Negotium] in your subject line - that will ensure it gets
     properly filtered and I pay attention to it in a timely manner.</p>
@@ -34,10 +34,10 @@
         <textarea name="main-input" id="main-input" placeholder="Text Goes Here" tabindex="4" required></textarea>
     </div>
 
-    <button class="btn btn-primary" id="encrypt-button" onClick="encrypt()" tabindex="5"><!--Encrypt & -->Send</button>
+    <button class="btn btn-primary" id="encrypt-button" onClick="encrypt()" tabindex="5"><!--Encrypt & -->Send</button> <!--This will, eventually, run the input through openPGP.js. TODO: Why does this not work? -->
 </form>
 
-<div id="pub-key" class="hidden">
+<div id="pub-key" class="hidden"> <!--I would put this somewhere more sensible, but it's not as if it needs to be obscured. The opposite, rather. -->
     -----BEGIN PGP PUBLIC KEY BLOCK-----
     Version: SKS 1.1.5
     Comment: Hostname: pgp.mit.edu
