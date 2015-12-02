@@ -14,8 +14,8 @@ angular.module('myApp.resume', []).controller('CVCtrl', function ($scope) {
         "Project stream planning",
         "Teamwork and coordination",
         "Web construction and administration with HTML5, CSS3, Angular 1, Ruby on Rails, SCSS",
-        "Detailed taste memory",
         "Competent with Microsoft Word, Excel, PowerPoint and Publisher",
+        "Detailed taste memory",
         "Training and Coaching",
         "Competent with the Linux command line interface.",
         "Change management"
