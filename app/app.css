@@ -265,18 +265,18 @@ a.btn-sidebar:hover {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
     border: 1px solid #f5f8fa;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #AAACAD;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
