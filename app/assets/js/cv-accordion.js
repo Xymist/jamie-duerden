@@ -11,7 +11,7 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
             dates: '(January 2015 - Current)',
             details: 'The Advice Services Transformation Fund project is funded by the Big Lottery, and has given money to many Citizens Advice offices and other charities across the UK. This particular instance of it was headed by Citizens Advice Waverley, in partnership with Waverley Borough Council. Several subprojects were spun off it: a training scheme for volunteers, moving CAW over to a thin client system, creating a website and network of charities to improve access to advice, installing touchscreen self-service advice terminals in various charities and GPs surgeries, and moving CAW over to a VoIP communications system.',
             details2: 'I played a significant part in the latter three, and was the initial source of the idea for the final (VoIP) part of the project. Over the course of this contract I have written wireframes, built the interface for the terminals, installed VoIP hardware, and been a key member of (indeed, for a short while managed) a multidisciplinary project team. I have greatly enhanced my communication skills, and gained significant appreciation for the role of a non-profit within a community and the unique circumstances they face.',
-            details3: 'Most of the goals here were "soft" benefits surrounding access to advice and information for the community of Waverley, but the new telephone system in particular represents an expected 20% cost saving year-on-year, with the ability both to expand at very low cost, and potentially to offset costs further by providing communications to other organisations. Further details of each of the subprojects may be found on my Projects page.'
+            details3: 'Most of the goals here were "soft" benefits surrounding access to advice and information for the community of Waverley, but the new telephone system in particular represents an expected 20% cost saving year-on-year, with the ability both to expand at very low cost, and potentially to offset costs further by providing communications to other organisations.'
         },
         {
             employer: "Maid in Sheffield",
@@ -40,8 +40,8 @@ angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function (
         },
         {
             school: "Winchester College ",
-            title: 'Kingsgate ',
-            dates: '(September 2008 - July 2010)',
+            title: 'Kingsgate House',
+            dates: '(September 2005 - July 2010)',
             details: 'Pre-U: Chemistry (D3), Physics (D3)',
             details2: 'A-Level: Biology (C)',
             details3: 'IGCSE: 9, grades A* - B, including A* Mathematics and English (Although really, if anyone cares about these at this point I shall be stunned)'
