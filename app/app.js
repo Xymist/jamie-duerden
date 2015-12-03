@@ -17,13 +17,7 @@ angular.module('myApp', [
 
     }])
     .controller('ProjectCtrl', [function ($scope) {
-        var request = new XMLHttpRequest();
-        request.open("GET", "jamieduerden.co.uk/site/app/assets/js/projects.json", false);
-        request.send(null);
-
-        var projectData = JSON.parse(request.responseText);
-
-        $scope.projects = projectData;
+        $scope.projects = $.getJSON('projects.json');
     }])
     .controller('ContactCtrl', [function () {
 
@@ -32,3 +26,4 @@ angular.module('myApp', [
         $analyticsProvider.firstPageview(true);
         $analyticsProvider.withAutoBase(true);
     });
+
