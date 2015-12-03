@@ -257,6 +257,7 @@ a.btn-sidebar:hover {
 
 .cv-btn{
     margin-top: 30px;
+<<<<<<< HEAD
     margin-right: 15px;
     margin-left: 15px;
 }
@@ -278,4 +279,11 @@ a.btn-sidebar:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #a2a4a5;
+=======
+}
+
+.project-panel{
+    box-shadow: black;
+    border: solid 1px;
+>>>>>>> Project page progress
 }
