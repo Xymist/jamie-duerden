@@ -18,7 +18,7 @@ angular.module('myApp', [
     }])
     .controller('ProjectCtrl', [function ($scope) {
         var request = new XMLHttpRequest();
-        request.open("GET", "./assets/js/projects.json", false);
+        request.open("GET", "jamieduerden.co.uk/site/app/assets/js/projects.json", false);
         request.send(null);
 
         var projectData = JSON.parse(request.responseText);
