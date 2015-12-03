@@ -16,7 +16,7 @@ angular.module('myApp', [
     .controller('HomeCtrl', [function () {
 
     }])
-    .controller('ProjectCtrl', [function ($scope) {
+    .controller('ProjectCtrl', function ($scope) {
         $scope.projects = [
             {"title":"test title", "description":"test description", "imageLink":"/site/app/assets/img/logo.png"},
             {"title":"test title", "description":"test description", "imageLink":"/site/app/assets/img/logo.png"},
@@ -24,8 +24,8 @@ angular.module('myApp', [
             {"title":"test title", "description":"test description", "imageLink":"/site/app/assets/img/logo.png"},
             {"title":"test title", "description":"test description", "imageLink":"/site/app/assets/img/logo.png"},
             {"title":"test title", "description":"test description", "imageLink":"/site/app/assets/img/logo.png"}
-        ];
-    }])
+        ]
+    })
     .controller('ContactCtrl', [function () {
 
     }])
