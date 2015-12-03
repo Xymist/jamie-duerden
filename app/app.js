@@ -16,8 +16,14 @@ angular.module('myApp', [
     .controller('HomeCtrl', [function () {
 
     }])
-    .controller('ProjectCtrl', [function () {
+    .controller('ProjectCtrl', [function ($scope) {
+        var request = new XMLHttpRequest();
+        request.open("GET", "/projects.json", false);
+        request.send(null);
 
+        var projectData = JSON.parse(request.responseText);
+
+        $scope.projects = projectData;
     }])
     .controller('ContactCtrl', [function () {
 
