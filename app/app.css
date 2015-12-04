@@ -280,8 +280,12 @@ a.btn-sidebar:hover {
     background: #a2a4a5;
 }
 
-.project-accordion{
-    width: 90%;
+.project-holder{
+    display: block;
+}
+
+.project-pane{
+    padding: 30px;
 }
 
 .project-image{
