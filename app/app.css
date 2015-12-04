@@ -280,7 +280,10 @@ a.btn-sidebar:hover {
     background: #a2a4a5;
 }
 
-.project-panel{
-    box-shadow: black;
-    border: solid 1px;
+.project-accordion{
+    width: 90%;
+}
+
+.project-image{
+    float: right
 }

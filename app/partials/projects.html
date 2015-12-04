@@ -1,11 +1,9 @@
 <div>
     <h3>Projects: Past, Present and Future</h3>
-    <div class="col-md-4 project-panel" ng-repeat="project in projects">
-        <h3>{{project.title}}</h3>
-        <img src="{{project.imageLink}}" alt="{{project.title}}"/>
-
-        <p>{{project.description}}</p>
-
-
-    </div>
+    <uib-accordion class="project-accordion" close-others="True">
+        <uib-accordion-group heading="{{project.title}}" ng-repeat="project in projects">
+            <img class="project-image" src="{{project.imageLink}}" alt="{{project.title}}"/>
+            <p>{{project.description}}</p>
+        </uib-accordion-group>
+    </uib-accordion>
 </div>
