@@ -1,6 +1,6 @@
 'use strict';
 //Would be one list. This is a workaround to a problem that no longer exists with the formatting on the CV page. TODO: Merge lists, put ng-repeat in the right places in the HTML
-angular.module('myApp.resume', []).controller('CVCtrl', function ($scope) {
+angular.module('jamieApp.resume', []).controller('CVCtrl', function ($scope) {
     $scope.skillsList1 = [
         "Interviewing suppliers",
         "Drafting documents and reports",

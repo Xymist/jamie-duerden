@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.routes', [])
+angular.module('jamieApp.routes', [])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/home', {

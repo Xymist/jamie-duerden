@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.cvAccordion', []).controller('CVAccordionCtrl', function ($scope) { //Not actually an accordion. TODO: Move all this crap into JSON
+angular.module('jamieApp.cvAccordion', []).controller('CVAccordionCtrl', function ($scope) { //Not actually an accordion. TODO: Move all this crap into JSON
 
     $scope.radio = {model :  undefined};
 

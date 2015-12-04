@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.dropdownController', []).controller('DropdownCtrl', function ($scope, $log) {
+angular.module('jamieApp.dropdownController', []).controller('DropdownCtrl', function ($scope, $log) {
 
     $scope.status = {
         isopen: false

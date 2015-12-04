@@ -1,18 +1,18 @@
 'use strict';
 
-angular.module('myApp', [
+angular.module('jamieApp', [
     'ngRoute',
-    'myApp.routes',
+    'jamieApp.routes',
     'ngTouch',
     'ui.bootstrap',
     'ui.router',
     'ngAnimate',
     'angulartics',
     'angulartics.google.analytics',
-    'myApp.dropdownController',
-    'myApp.cvAccordion',
-    'myApp.resume',
-    'myApp.projects'
+    'jamieApp.dropdownController',
+    'jamieApp.cvAccordion',
+    'jamieApp.resume',
+    'jamieApp.projects'
 ])
     .controller('HomeCtrl', [function () {
 
