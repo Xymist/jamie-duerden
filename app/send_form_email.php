@@ -2,7 +2,7 @@
 
 if(isset($_POST['email'])) {
 
-    $email_to = "jamie.f.duerden@gmail.com";
+    $email_to = "james@jamieduerden.co.uk";
     $email_subject = $_POST['subject'];
     $name = $_POST['name'];
     $email_from = $_POST['email'];
@@ -27,9 +27,8 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);
 }
 
-header("Location: http://jamieduerden.co.uk/site/app/contact");
+header("Location: https://jamieduerden.co.uk/contact");
 die();
 
 
 ?>
-
