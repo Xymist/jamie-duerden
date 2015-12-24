@@ -282,6 +282,7 @@ a.btn-sidebar:hover {
 
 .project-holder{
     display: block;
+    height: 630px;
 }
 
 .project-pane{
@@ -289,5 +290,6 @@ a.btn-sidebar:hover {
 }
 
 .project-image{
-    float: right
+    float: right;
+    margin: 12px;
 }
