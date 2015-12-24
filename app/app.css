@@ -291,5 +291,6 @@ a.btn-sidebar:hover {
 
 .project-image{
     float: right;
-    margin: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
