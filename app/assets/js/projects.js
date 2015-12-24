@@ -1,10 +1,16 @@
 'use strict';
 angular.module('jamieApp.projects', []).controller('ProjectCtrl', function ($scope) {
-    $scope.projects = [
+    $scope.pastProjects = [
         {"title":"Citizens Advice VoIP", "description":"An initiative to provide an up-to-date communications system to Citizens Advice Waverley, with a view to improving sustainability and standardising across the district.", "imageLink":"/assets/img/waverley-logo.png", "link":""},
         {"title":"Citizens Advice Kiosks", "description":"In partnership with other charities and several Waverley GP surgeries, I headed the team responsible for commissioning and installing a number of self-service advice terminals.", "imageLink":"/assets/img/waverley-logo.png", "link":"http://gp-farnham.3rdsectorit.co.uk/#/home"},
         {"title":"Waverley Advice Website", "description":"Under the banner of 'Get Advice In Waverley' this project aimed to enable the delivery of 'joined-up advice' across Waverley, with information available to the general public and an inter-organisation referral system behind the scenes.", "imageLink":"/assets/img/gaiw-logo.png", "link":"http://getadviceinwaverley.org.uk"},
         {"title":"Maid in Sheffield", "description":"A Sheffield-based startup of which I was the technical director. I created the website and integrated the billing system.", "imageLink":"/assets/img/mis-transparent-small.png", "link":""},
         {"title":"Haslemere Cellar Website", "description":"Creation of a website, and configuration of an integrated stock control system, for a successful local business", "imageLink":"/assets/img/shop-image.jpg", "link":"http://haslemerecellar.co.uk"}
-    ]
+    ];
+    $scope.Projects = [
+
+    ];
+    $scope.futureProjects = [
+
+    ];
 });
