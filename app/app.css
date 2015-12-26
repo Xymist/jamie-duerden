@@ -287,7 +287,7 @@ a.btn-sidebar:hover {
 
 .project-pane{
     padding: 30px;
-    height: 200px;
+    min-height: 200px;
 }
 
 .project-image{

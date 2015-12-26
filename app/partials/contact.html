@@ -31,11 +31,10 @@
         <textarea name="main-input" id="main-input" placeholder="Text Goes Here" tabindex="4" required></textarea>
     </div>
 
-    <button class="btn btn-primary" id="encrypt-button" onClick="encrypt()" tabindex="5"><!--Encrypt & -->Send</button> <!--This will, eventually, run the input through openPGP.js. TODO: Why does this not work? -->
+    <button class="btn btn-primary" id="encrypt-button" onClick="encrypt_if_possible()" tabindex="5"><!--Encrypt & -->Send</button> <!--This will, eventually, run the input through openPGP.js. TODO: Why does this not work? -->
 </form>
-
-<div id="pub-key" class="hidden"> <!--I would put this somewhere more sensible, but it's not as if it needs to be obscured. The opposite, rather. -->
------BEGIN PGP PUBLIC KEY BLOCK-----
+<!--I would put this somewhere more sensible, but it's not as if it needs to be obscured. The opposite, rather. -->
+<div id="pub-key" class="hidden">-----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: SKS 1.1.5
 Comment: Hostname: pgp.mit.edu
 
@@ -72,5 +71,4 @@ oEQUVikk7mSL4tsE+UU9CqimMnDjuhk/zgrWDSPuxQp4FYUx428bsC1hqk9BdwOiHLo5Hlb7
 GBECAA8FAlWVwqQCGwwFCRLMAwAACgkQS3dy+JozNNY9VgCcDaSsfPCKS/+Tv+hFIRGVjoe6
 gtEAn22puQEm4j6/ftecayFBox5QZnuK
 =s3f6
------END PGP PUBLIC KEY BLOCK-----
-</div>
+-----END PGP PUBLIC KEY BLOCK-----</div>
