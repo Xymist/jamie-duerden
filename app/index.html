@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" type="text/css"
-          href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <base href="/">
 </head>
 <body>
 
-<div id="name-flag" class="pull-right">
-    <h1>Jamie Duerden</h1>
-    <p>Eternally Experimenting</p>
-</div>
-
-<div class="container side-bar">
+<navi class="container side-bar">
     <a href="/home"><img class="jd-logo" src="/assets/img/logo.png" alt="logo"/></a>
     <a class="btn-sidebar" href="/contact">Contact Me</a>
     <a class="btn-sidebar" href="/projects">Projects</a>
     <a class="btn-sidebar" href="/resume">Resume</a>
     <a class="btn-sidebar" href="http://blog.jamieduerden.co.uk/">Blog</a>
-</div>
+    <div id="name-flag" class="pull-right">
+        <h1>Jamie Duerden</h1>
+        <p>Eternally Experimenting</p>
+    </div>
+    <a class="fa fa-github fa-3x pull-right" href="https://github.com/Xymist"></a>
+</navi>
 
-<div ng-controller="DropdownCtrl"> <!--This is hidden unless on mobile-sized screens. See app.css @media queries for details.-->
+<div ng-controller="DropdownCtrl">
     <div class="btn-group" dropdown is-open="status.isopen">
         <div class="nav-button" alt="nav button" dropdown-toggle ng-disabled="disabled">
             <img id="nav-image" src="/assets/img/nav-button.png">

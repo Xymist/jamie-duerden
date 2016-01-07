@@ -5,9 +5,11 @@ angular.module('jamieApp.projects', []).controller('ProjectCtrl', function ($sco
         {"title":"Citizens Advice Kiosks", "description":"In partnership with other charities and several Waverley GP surgeries, I headed the team responsible for commissioning and installing a number of self-service advice terminals.", "imageLink":"/assets/img/waverley-logo.png", "link":"http://gp-farnham.3rdsectorit.co.uk/#/home"},
         {"title":"Waverley Advice Website", "description":"Under the banner of 'Get Advice In Waverley' this project aimed to enable the delivery of 'joined-up advice' across Waverley, with information available to the general public and an inter-organisation referral system behind the scenes.", "imageLink":"/assets/img/gaiw-logo.png", "link":"http://getadviceinwaverley.org.uk"},
         {"title":"Maid in Sheffield", "description":"A Sheffield-based startup of which I was the technical director. I created the website and integrated the billing system.", "imageLink":"/assets/img/mis-transparent-small.png", "link":""},
-        {"title":"Haslemere Cellar Website", "description":"Creation of a website, and configuration of an integrated stock control system, for a successful local business", "imageLink":"/assets/img/shop-image.jpg", "link":"http://haslemerecellar.co.uk"}
+        {"title":"The Haslemere Cellar", "description":"Creation of a website and configuration of an integrated stock control system for a successful local business", "imageLink":"/assets/img/shop-image.jpg", "link":"http://haslemerecellar.co.uk"}
     ];
-    $scope.Projects = [
+    $scope.projects = [
+        {"title":"This website!", "description":"As is probably obvious, this place is still in development, which is why it changes size, shape and framework occasionally. As a testbed, it will likely never be considered 'done', or even 'good'.", "imageLink":"/assets/img/logo.png", "link":"https://jamieduerden.co.uk"},
+        {"title":"My Blog", "description":"I attempt to write as often as I have something interesting to say; principally this is a tool for adjusting my writing styles.", "imageLink":"/assets/img/logo.png", "link":"https://blog.jamieduerden.co.uk"}
 
     ];
     $scope.futureProjects = [

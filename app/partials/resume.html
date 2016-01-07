@@ -12,11 +12,11 @@
     <div class="col-md-12" id="accordionContainer" ng-controller="CVAccordionCtrl">
         <div class="col-md-4" id="buttonHolder">
             <h3>Employment History</h3>
-            <button ng-repeat="job in jobGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="job">{{job.employer}}</button>
+            <button ng-repeat="job in jobGroups" class="btn-resume" type="button" ng-model="radio.model" btn-radio="job">{{job.employer}}</button>
             <h3>Education</h3>
-            <button ng-repeat="school in educationGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="school">{{school.school}}</button>
+            <button ng-repeat="school in educationGroups" class="btn-resume" type="button" ng-model="radio.model" btn-radio="school">{{school.school}}</button>
             <h3>Hobbies</h3>
-            <button ng-repeat="hobby in hobbyGroups" class="btn-sidebar" type="button" ng-model="radio.model" btn-radio="hobby">{{hobby.activity}}</button>
+            <button ng-repeat="hobby in hobbyGroups" class="btn-resume" type="button" ng-model="radio.model" btn-radio="hobby">{{hobby.activity}}</button>
         </div>
         <div class="col-md-8" id="dataHolder">
             <h4>{{radio.model.title}}{{radio.model.skillLevel}} {{radio.model.dates}}</h4>
@@ -25,7 +25,7 @@
             <p>{{radio.model.details3}}</p>
         </div>
     </div>
-    <a class="btn btn-primary cv-btn pull-right" href="https://docs.google.com/document/d/1ha9DcivSI5kzeFa-9vxEq1XTkpyZ_70yJw-ZLw9_i-c/edit?usp=sharing">View and download CV</a>
-    <a class="btn btn-primary cv-btn pull-right" href="/projects">See my projects page</a>
+    <a class="btn btn-primary cv-btn pull-right" href="https://docs.google.com/document/d/1ha9DcivSI5kzeFa-9vxEq1XTkpyZ_70yJw-ZLw9_i-c/edit?usp=sharing"><i class="fa fa-file-text-o"></i> View and download CV</a>
+    <a class="btn btn-primary cv-btn pull-right" href="/projects"><i class="fa fa-cog fa-spin"></i> See my projects page</a>
 
 </div>

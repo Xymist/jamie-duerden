@@ -25,3 +25,10 @@ angular.module('jamieApp', [
         $analyticsProvider.withAutoBase(true);
     });
 
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('navi').addClass('scrolled');
+  } else {
+    $('navi').removeClass('scrolled');
+  }
+});

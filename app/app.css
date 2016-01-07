@@ -7,7 +7,9 @@
 a {
     cursor: pointer;
 }
-
+a:hover {
+    text-decoration: none;
+}
 h1, h2, h3, h4, h5 {
     font-family: 'Open Sans', sans-serif;
 }
@@ -20,19 +22,18 @@ p, a {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    right: 0;
     margin: 0;
-    height: 100%;
-    border-color: #BFC8CD;
-    background: #f5f8fa;
+    border-color: #8A9BC6;
+    background: #DDE3EF;
     color: #9EABB3;
     overflow: hidden;
     z-index: 10;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 15px;
-    opacity: 0.85;
-    width: 200px;
+    padding: 10px;
+    opacity: 1;
+    width: 100%;
+    height:100px;
+    border-bottom: 1px solid;
 }
 
 body{
@@ -45,6 +46,40 @@ body{
 }
 
 .btn-sidebar {
+    border: 2px solid;
+    border-color: #AAACAD;
+    color: #AAACAD;
+    background: #DDE3EF; /*#f5f8fa*/
+    margin: 10px 20px;
+    width: 145px;
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+.btn-sidebar:hover {
+    border-color: #787A7A;
+    color: #787A7A;
+}
+
+a.btn-sidebar:hover {
+    text-decoration: none;
+}
+
+.btn-resume {
     border: 2px solid;
     border-color: #AAACAD;
     color: #AAACAD;
@@ -69,19 +104,23 @@ body{
     touch-action: manipulation;
 }
 
-.btn-sidebar:hover {
+.btn-resume:hover {
     border-color: #787A7A;
     color: #787A7A;
 }
 
-a.btn-sidebar:hover {
+a.btn-resume:hover {
+    text-decoration: none;
+}
+
+a.fa:hover {
     text-decoration: none;
 }
 
 .jd-logo {
-    margin: 10px;
-    width: 90%;
-    height: auto;
+    width: auto;
+    margin-right: 110px;
+    height: 100%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
@@ -107,9 +146,9 @@ a.btn-sidebar:hover {
 }
 
 #primary-container{
-    margin-top: 30px;
-    margin-left: 230px;
-    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 6px;
     background: #f5f8fa;
     opacity: 0.75;
@@ -158,7 +197,6 @@ a.btn-sidebar:hover {
         margin-left: 15px;
     }
     #name-flag>h1{
-        margin-top: 23px;
     }
     #name-flag>p{
         margin-top: 15px;
@@ -179,7 +217,6 @@ a.btn-sidebar:hover {
         margin-top: 20px;
     }
     #name-flag>h1{
-        margin-top: 23px;
     }
     #name-flag>p{
         margin-top: 15px;
@@ -190,16 +227,32 @@ a.btn-sidebar:hover {
     }
 }
 
+#name-flag>p{
+    margin-bottom: 0px;
+}
+
+#name-flag>h1{
+    margin-top: 0px;
+}
+
+#name-flag{
+    margin-left: 30px;
+}
+
+.side-bar>.fa{
+    margin-top: 19px;
+}
+
 @media (min-width: 640px) {
     .nav-button{
         display: none;
     }
-    #name-flag>h1{
-        margin-top: 60px;
+    #primary-container{
+        margin-top: 95px;
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     #primary-container {
         max-width: 1000px;
     }
@@ -207,18 +260,26 @@ a.btn-sidebar:hover {
         max-width: 1000px;
     }
 }
-
-@media (min-width: 640px) and (max-width: 1600px){
-    #primary-container{
-        margin-top: 169px;
+@media (max-width: 1330px) {
+    .jd-logo{
+        margin-right: 10px;
+    }
+    .btn-sidebar{
+        margin: 10px 10px;
     }
 }
 
 #name-flag{
     margin-right: 40px;
     z-index: 99;
+    display: inline-block;
 }
 
+@media (max-width: 1120px) {
+    #name-flag {
+        display: none;
+    }
+}
 #accordionContainer{
     padding-top: 20px;
 }
@@ -282,7 +343,7 @@ a.btn-sidebar:hover {
 
 .project-holder{
     display: block;
-    height: 720px;
+    height: 1000px;
 }
 
 .project-pane{
@@ -294,4 +355,28 @@ a.btn-sidebar:hover {
     float: right;
     margin-left: 12px;
     margin-right: 12px;
+}
+
+.side-bar {
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.scrolled{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 70px;
+}
+.scrolled>a>.jd-logo{
+    margin-top: 10px;
+    height: 50px;
+    width: auto;
+}
+.scrolled>.btn-sidebar{
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+.scrolled>.fa{
+    margin-top: 14px;
 }
