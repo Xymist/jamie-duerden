@@ -8,8 +8,7 @@
     vanish into the aether, maybe.</p>
 
 <p>I strongly prefer that anything you send me be encrypted; my public key is <a
-        href="/site/app/assets/txt/jamie-pgp.txt">here</a><!--, or you can use the contact form below which automatically encrypts the body of the email TODO: No it doesn't!-->. If you can sign it as well, even better.</p>
-
+        href="/assets/txt/jamie-pgp.txt" download>here</a><!--, or you can use the contact form below which automatically encrypts the body of the email TODO: No it doesn't!-->. If you can sign it as well, even better.</p>
 <form id="contact-form" action="send_form_email.php" method="post" role="form">
 	<legend>Contact Me</legend>
 
@@ -33,8 +32,20 @@
 
     <button class="btn btn-primary" id="encrypt-button" onClick="encrypt_if_possible()" tabindex="5"><!--Encrypt & -->Send</button> <!--This will, eventually, run the input through openPGP.js. TODO: Why does this not work? -->
 </form>
-<!--I would put this somewhere more sensible, but it's not as if it needs to be obscured. The opposite, rather. -->
-<div id="pub-key" class="hidden">-----BEGIN PGP PUBLIC KEY BLOCK-----
+<div class="hidden">
+    <div class="vcard">
+    <span class="fn">James Duerden</span>
+    <span class="n">
+        <span class="honorific-prefix">Mr.</span>
+        <span class="given-name">James</span>
+        <abbr class="additional-name">F.</abbr>
+        <span class="family-name">Duerden</span>
+        <span class="honorific-suffix">BSc</span>
+    </span>
+    <a class="url" href="https://jamieduerden.co.uk">Website</a>,
+    <a class="email" href="mailto:james@jamieduerden.co.uk">Email</a>
+    <span id="pub-key" class="key">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: SKS 1.1.5
 Comment: Hostname: pgp.mit.edu
 
@@ -71,4 +82,7 @@ oEQUVikk7mSL4tsE+UU9CqimMnDjuhk/zgrWDSPuxQp4FYUx428bsC1hqk9BdwOiHLo5Hlb7
 GBECAA8FAlWVwqQCGwwFCRLMAwAACgkQS3dy+JozNNY9VgCcDaSsfPCKS/+Tv+hFIRGVjoe6
 gtEAn22puQEm4j6/ftecayFBox5QZnuK
 =s3f6
------END PGP PUBLIC KEY BLOCK-----</div>
+-----END PGP PUBLIC KEY BLOCK-----
+    </span>
+    </div>
+</div>
