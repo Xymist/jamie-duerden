@@ -1,24 +1,23 @@
-<div>
-    <h3>Projects: Past, Present and Future</h3>
-    <div class="project-holder">
-        <h3>Past</h3>
-        <div class="col-md-6 project-pane" ng-repeat="pastProject in pastProjects">
-            <a href="{{pastProject.link}}"><h4>{{pastProject.title}}</h4></a>
-            <img class="project-image" src="{{pastProject.imageLink}}" alt="{{pastProject.title}}" width="120px"/>
-            <p>{{pastProject.description}}</p>
-        </div>
-        <h3>Present</h3>
-        <div class="col-md-6 project-pane" ng-repeat="project in projects">
-            <a href="{{project.link}}"><h4>{{project.title}}</h4></a>
-            <img class="project-image" src="{{project.imageLink}}" alt="{{project.title}}" width="120px"/>
-            <p>{{project.description}}</p>
-        </div>
-        <!--
-        <h3>Future</h3>
-        <div class="col-md-6 project-pane" ng-repeat="futureProject in futureProjects">
-            <a href="{{futureProject.link}}"><h4>{{futureProject.title}}</h4></a>
-            <img class="project-image" src="{{futureProject.imageLink}}" alt="{{futureProject.title}}" width="120px"/>
-            <p>{{futureProject.description}}</p>
-        </div>-->
+<h3>Projects: Past, Present and Future</h3>
+<div id="project-holder" class="project-holder">
+    <h3>Past</h3>
+    <div class="col-md-6 project-pane" ng-repeat="pastProject in pastProjects">
+        <a href="{{pastProject.link}}"><h4>{{pastProject.title}}</h4></a>
+        <img class="project-image" src="{{pastProject.imageLink}}" alt="{{pastProject.title}}" width="120px"/>
+        <p>{{pastProject.description}}</p>
     </div>
+    <h3>Present</h3>
+    <div class="col-md-6 project-pane" ng-repeat="project in projects">
+        <a href="{{project.link}}"><h4>{{project.title}}</h4></a>
+        <img class="project-image" src="{{project.imageLink}}" alt="{{project.title}}" width="120px"/>
+        <p>{{project.description}}</p>
+    </div>
+    <!--
+    <h3>Future</h3>
+    <div class="col-md-6 project-pane" ng-repeat="futureProject in futureProjects">
+        <a href="{{futureProject.link}}"><h4>{{futureProject.title}}</h4></a>
+        <img class="project-image" src="{{futureProject.imageLink}}" alt="{{futureProject.title}}" width="120px"/>
+        <p>{{futureProject.description}}</p>
+    </div>-->
 </div>
+<script>window.onLoad = document.getElementById("project-holder").style.height = (document.querySelectorAll('#project-holder .project-pane').length*470)+"px";</script>
