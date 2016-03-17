@@ -9,7 +9,9 @@ angular.module('jamieApp.projects', []).controller('ProjectCtrl', function ($sco
     ];
     $scope.projects = [
         {"title":"This website!", "description":"As is probably obvious, this place is still in development, which is why it changes size, shape and framework occasionally. As a testbed, it will likely never be considered 'done', or even 'good'.", "imageLink":"/assets/img/logo.png", "link":"https://jamieduerden.co.uk"},
-        {"title":"My Blog", "description":"I attempt to write as often as I have something interesting to say; principally this is a tool for adjusting my writing styles.", "imageLink":"/assets/img/logo.png", "link":"https://blog.jamieduerden.co.uk"}
+        {"title":"My Blog", "description":"I attempt to write as often as I have something interesting to say; principally this is a tool for adjusting my writing styles.", "imageLink":"/assets/img/logo.png", "link":"https://blog.jamieduerden.co.uk"},
+        {"title":"Kiosk Data Logger", "description":"As a follow-on to the kiosk project headed by Citizens Advice Waverley, data from multiple sources are being funnelled in to the Better Outcomes initiative. This is the service which collects the kiosk data and funnels it to a central repository.","imageLink":"/assets/img/logo.png", "link":"https://github.com/Xymist/caw-kiosk-logger"},
+        {"title":"Kiosk Data Webservice", "description":"As a follow-on to the kiosk project headed by Citizens Advice Waverley, data from multiple sources are being funnelled in to the Better Outcomes initiative. This is the web service which displays end-user accessible interpretations of the log data.","imageLink":"/assets/img/logo.png", "link":"https://github.com/Xymist/caw-kiosk-logsite"}
 
     ];
     $scope.futureProjects = [
